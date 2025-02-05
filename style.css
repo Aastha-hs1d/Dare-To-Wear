@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Martel+Sans:wght@200;300;400;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Emilys+Candy&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    position: relative;
+    margin: 0;
+    height: 100vh;
+    width: 100vw;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url('joanna-kosinska-mVdzV_HTyH4-unsplash.jpg');
+    background-size: cover;
+    background-position: top right;
+    background-repeat: no-repeat;
+    z-index: -1; /* Ensure the background is behind the content */
+    width: 100vw;  /* Ensure it covers the entire viewport width */
+    height: 100vh; /* Ensure it covers the entire viewport height */
+}
+header{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: coral;
+    gap: 5px;
+    padding-top: 20px;
+}
+h3{
+    font-family: "Raleway", serif;
+    font-weight: 300;
+    font-size: 1.5rem;
+}
+h1{
+    font-family: "Playfair Display", serif;
+    font-weight: 100;
+    font-size: 3rem;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+    padding-top: 100px;
+}
+.box{
+    display: flex;
+    height: 200px;
+    width: 200px;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-family: "Dancing Script", serif;
+    font-size: 30px;
+    border-radius: 10px;
+}
+.box:hover{
+    transform: scale(1.1);
+    transition: all 300ms linear;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+}
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 50px;
+}
+button{
+    height: 60px;
+    width: 120px;
+    border-radius: 7px;
+    font-family: "Raleway", serif;
+    font-size: larger;
+    font-weight: bolder;
+    color: white;
+    background-color: darkred;
+    cursor: pointer;
+}
+a:link{
+    text-decoration: none;
+}
+a:visited{
+    text-decoration: none;
+    color: aliceblue;
+}
